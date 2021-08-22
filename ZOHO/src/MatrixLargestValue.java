@@ -9,6 +9,7 @@ public class MatrixLargestValue {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter the row and column size: ");
+
 //		int arr[][] = new int[in.nextInt()][in.nextInt()];
 		int arr[][] = {{1,2,4},{2,6,9},{8,3,7}};
 		System.out.println("Enter the array elements: ");
@@ -17,33 +18,43 @@ public class MatrixLargestValue {
 //				arr[i][j]=in.nextInt();
 //			}
 //		}
+
+		int arr1[][] = new int[in.nextInt()][in.nextInt()];
+//		int arr[][] = {{1,2,4},{2,6,9},{8,3,7}};
+		System.out.println("Enter the array elements: ");
+		for (int i = 0; i < arr1.length; i++) {
+			for (int j = 0; j < arr1.length; j++) {
+				arr1[i][j]=in.nextInt();
+			}
+		}
+
 		System.out.println("Enter the find x and y value: ");
 		int x = in.nextInt();
 		int y = in.nextInt();
-		int value = arr[x][y];
+		int value = arr1[x][y];
 		int top=0;
 		if(x!=0) {
-			top = arr[x-1][y];
+			top = arr1[x-1][y];
 		}
 	   
-		int right = arr[x][y+1], left = arr[x][y-1], down = arr[x+1][y];
+		int right = arr1[x][y+1], left = arr1[x][y-1], down = arr1[x+1][y];
 		if(x!=0) {
 			if(top > right && top > down && top > left) {
-				arr[x][y] = top;
+				arr1[x][y] = top;
 			}
 		}
 		else if(down > right && down > top && down > left) {
-			arr[x][y] = down;
+			arr1[x][y] = down;
 		}
 		else if(right > down && right > top && right > left) {
-			arr[x][y] = right;
+			arr1[x][y] = right;
 		}
 		else {
-			arr[x][y] = left;
+			arr1[x][y] = left;
 		}
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
-				System.out.print(arr[i][j]);
+		for (int i = 0; i < arr1.length; i++) {
+			for (int j = 0; j < arr1.length; j++) {
+				System.out.print(arr1[i][j]);
 			}
 			System.out.println();
 		}
