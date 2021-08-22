@@ -9,14 +9,14 @@ public class MatrixLargestValue {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter the row and column size: ");
-		int arr[][] = new int[in.nextInt()][in.nextInt()];
-//		int arr[][] = {{1,2,4},{2,6,9},{8,3,7}};
+//		int arr[][] = new int[in.nextInt()][in.nextInt()];
+		int arr[][] = {{1,2,4},{2,6,9},{8,3,7}};
 		System.out.println("Enter the array elements: ");
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
-				arr[i][j]=in.nextInt();
-			}
-		}
+//		for (int i = 0; i < arr.length; i++) {
+//			for (int j = 0; j < arr.length; j++) {
+//				arr[i][j]=in.nextInt();
+//			}
+//		}
 		System.out.println("Enter the find x and y value: ");
 		int x = in.nextInt();
 		int y = in.nextInt();

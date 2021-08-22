@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class AAAAA {
+public class ArrayMatrixPrint {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

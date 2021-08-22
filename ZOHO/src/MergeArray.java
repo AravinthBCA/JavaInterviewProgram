@@ -18,9 +18,12 @@ public class MergeArray {
 			merge[i]=arr2[j];
 			j++;
 		}
-		for (int i = 0; i < merge.length; i++) {
-			System.out.println(merge[i]);
-		}
+//		for (int i = 0; i < merge.length; i++) {
+//			System.out.println(merge[i]);
+//		}
+		System.out.println(Arrays.toString(arr1));
+		System.out.println(Arrays.toString(arr2));
+		System.out.println("After merge and duplicate remove: ");
 		TreeSet<Integer> s = new TreeSet<Integer>();
 		for (int i = 0; i < merge.length; i++) {
 			s.add(merge[i]);

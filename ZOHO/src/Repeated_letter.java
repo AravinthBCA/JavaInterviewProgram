@@ -17,7 +17,7 @@ public class Repeated_letter {
 				count=a[i];
 			}
 		}
-		return 'n';
+		return count;
 	}
 
 	public static void main(String[] args) {
