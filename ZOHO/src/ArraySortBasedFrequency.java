@@ -34,6 +34,7 @@ public class ArraySortBasedFrequency
 		for (int i = 0; i < n; i++) {
 			freq[arr[i]]++;
 		}
+		System.out.println(Arrays.toString(freq));
 
 		// Initialise cnt to 0
 		int cnt = 0;
