@@ -11,71 +11,22 @@ public class Parking {
 		int row=0,column=0,j=0,set=0;
 		int print=0,len=0,find=0,k=0,start=0;
 		if(carNumber>=1000 || carNumber<=9999) {
-			for (int i = length; i>=0; i--) {
-				System.out.print("Car Parked at: "+"("+(i-length));
-				for (j = 0; j <width; j++) {
-					if(j==0) {
-						System.out.print(","+j+")");
+			for (int i = 1; i<length; i++) {
+				System.out.print("Car Parked at: "+"("+(i));
+				for (j = 1; j <width-1; j++) {
+					if(arr[i][j]==1) {
+						System.out.print(","+j+")"+"\n");
+						arr[i][j]=carNumber;
+						print=1;
+						break;
 					}
-					if(arr[i-1][j]==1) {
-						arr[i-1][j]=carNumber;
-						set=1;
-					}
-//					if(arr[i][j]==1) {
-//						print=1;
-//					}
-//				}
-//				if(print==0) {
-//					j=0;
-//					
-//				}
-//					System.out.print(j+")");
-//					if(i==length) {
-//						if(arr[i-1][j]==1) {
-//							arr[i-1][j]=carNumber;
-//						}
-//					}
-//						if(arr[i][j]==1) {
-//							arr[i][j]=carNumber;
-//							row=i-length;
-//							column=j;
-//							print=1;
-//							System.out.println("Car Parked at: "+"("+Math.abs(row)+","+Math.abs(width-column-1)+")");
-//							for (int j2 = length; j2 >=0; j2--) {
-//								start=k;
-//								k=0;
-//								for (k = 0; k < width; k++) {
-//									if(arr[j2][k]==carNumber) {
-//										find=1;
-//									}
-//									if(find==0) {
-//										System.out.println("Path traveled: "+"("+(length-j2)+","+(start)+")");
-//									}
-//								}		
-//								if(find==1){
-//									System.out.print("("+(length-j2)+","+(start)+")");
-//								}
-//							}
-//						}
-//						else {
-//							len++;
-//						}
-//						if(print==1) {
-//							break;
-//						}
-//					}
-//				if(print==1) {
-//					break;
-//				}
-//				}
-//			if(print==1) {
-//				floorMap(arr,length,width);
-//			}
-//			if(len==((length+1)+(width))) {
-//				System.out.println("Parking Full!");
-//				floorMap(arr,length,width);
-//			}
-//		}
+				}
+				if(print==1) {
+					floorMap(arr, length, width);
+					break;
+				}
+			}
+		}
 		else {
 			System.out.println("Not valid Car Number");
 			System.exit(0);
@@ -94,7 +45,6 @@ public class Parking {
 				else {
 					System.out.print(arr[i][j]+" ");
 				}
-//				System.out.print(arr[i][j]+" ");
 			}
 			System.out.println();
 		}
@@ -109,13 +59,12 @@ public class Parking {
 				for (int j = 0; j < width; j++) {
 						if(arr[i][j]==carNumber) {
 							arr[i][j]=1;
+							System.out.println("Car exited from the parking area: ("+i+","+j+")");
 							flag = true;
+							break;
 						}
 						else {
 							flag = false;
-						}
-						if(flag) {
-							break;
 						}
 					}
 				if(flag) {
@@ -126,7 +75,6 @@ public class Parking {
 				System.out.println("Invalid Vehicle Number");
 			}
 			else {
-				System.out.println("Car exited from the parking area");
 				floorMap(arr,length,width);
 			}
 		}
