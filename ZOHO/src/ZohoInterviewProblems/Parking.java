@@ -59,7 +59,33 @@ public class Parking {
 				for (int j = 0; j < width; j++) {
 						if(arr[i][j]==carNumber) {
 							arr[i][j]=1;
-							System.out.println("Car exited from the parking area: ("+i+","+j+")");
+							System.out.println("Car exited from the parking area: ("+i+","+j+")"+"\n");
+							if(arr[i-1][j]==0) {
+								for (int j2 = i-1; j2 < i; j2++) {
+									for (int k = j; k < arr.length; k++) {
+										System.out.print("("+(i-1)+","+k+")"+" -> ");
+										if(k==(arr.length)-1) {
+											for (int k2 = i; k2 <(arr.length); k2++) {
+												System.out.print("("+k2+","+((arr.length)-1)+")"+" -> ");
+											}
+										}
+									}
+								}
+							}
+							else if(arr[i][j+1]==0) {
+								for (int j2 = i; j2 < arr.length; j2++) {
+									System.out.print("("+j2+","+(j+1)+")"+" -> ");
+								}
+							}
+							else if(arr[i+1][j]==0) {
+								System.out.println("length: "+arr.length);
+								for (int j2 = j; j2 < arr.length; j2++) {
+									System.out.print("("+(i+1)+","+j2+")"+" -> ");
+								}
+								for (int j2 = i+2; j2 < arr.length; j2++) {
+									System.out.print("("+j2+","+(arr.length-2)+")"+" -> ");
+								}
+							}
 							flag = true;
 							break;
 						}
@@ -75,6 +101,7 @@ public class Parking {
 				System.out.println("Invalid Vehicle Number");
 			}
 			else {
+				System.out.println("");
 				floorMap(arr,length,width);
 			}
 		}
@@ -113,7 +140,7 @@ public class Parking {
 			System.out.println();
 		}
 		boolean flag=true;
-		while(flag) {
+		while(true) {
 			System.out.println("Select any one of the following options: ");
 			System.out.println("1. Entry");
 			System.out.println("2. Exit");
