@@ -6,7 +6,7 @@ public class ArrayUnionIntersectionExcept {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
-		Integer arr1[] = {1,3,4,5,6,8,9};
+		Integer arr1[] = {1,3,6,5,4,8,9};
 		Integer arr2[] = {1,5,8,9,2};
 		Integer union[] = new Integer[arr1.length+arr2.length];
 		Integer inter[] = new Integer[arr1.length+arr2.length];

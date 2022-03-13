@@ -10,7 +10,7 @@ public class NumberToWords {
 	        " Nineteen" };
 	 
 	    String ten[] = { " ", " ", " Twenty", " Thirty", " Forty", " Fifty", " Sixty", "Seventy", " Eighty", " Ninety" };
-	 
+	    System.out.println("n : "+n);
 	    if (n > 19)
 	    {
 	      System.out.print(ten[n / 10] + " " + one[n % 10]);
@@ -28,7 +28,7 @@ public class NumberToWords {
 	    int n = 0;
 	    Scanner scanf = new Scanner(System.in);
 	    System.out.println("Enter an integer number: ");
-	    n = scanf.nextInt();
+	    n = 1010;
 	 
 	    if (n <= 0)
 	    {
@@ -37,18 +37,19 @@ public class NumberToWords {
 	    else
 	    {
 	      NumberToWords a = new NumberToWords();
-	      a.pw((n / 1000000000)%100, " Hundred");
 //	      System.out.println("value hund: "+n/1000000000);
-	      a.pw((n / 10000000)%100, " crore");
+	      a.pw((n / 1000000000)%100, " Hundred");
 //	      System.out.println("value cro: "+n/10000000);
-	      a.pw((n / 100000)%100, " lakh");
+	      a.pw((n / 10000000)%100, " crore");
 //	      System.out.println("value lak: "+n/100000);
-	      a.pw((n / 1000)%100 , " thousand");
+	      a.pw((n / 100000)%100, " lakh");
 //	      System.out.println("value thou: "+(n/1000)%100);
-//	      System.out.println("value hun: "+(n/100)%100);
+	      a.pw((n / 1000)%100 , " thousand");
+//	      System.out.println("value hun: "+n/100);
 	      a.pw((n / 100)%10, " hundred");
-
+//	      System.out.println("value: "+(n%100));
 	      a.pw((n % 100), " ");
+	      
 	    }
 	  }
 }

@@ -96,7 +96,8 @@ public class ArraySortBasedFrequency
 
 		// Sort the arr[] in decreasing order
 		Arrays.sort(arr, Collections.reverseOrder());
-
+		
+		System.out.println(Arrays.toString(arr));
 		// Function that prints elements
 		// in decreasing order
 		printSortedArray(arr, cnt);

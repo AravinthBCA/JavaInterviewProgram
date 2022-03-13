@@ -2,7 +2,10 @@ import java.util.*;
 import java.io.*;
 
 public class ExpandString {
-
+/*you can enter one char followed by integer based on the integer the char was printed
+ * sample input = a5b3c8
+ *        input =aa
+ */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
@@ -18,5 +21,4 @@ public class ExpandString {
 		}
 		System.out.println(ans);
 	}
-
 }

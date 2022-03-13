@@ -4,7 +4,8 @@ import java.io.*;
 public class ArrayMatrixPrint {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/* sample input = aravinthii 
+		 * This program print Z format matrix using character extract from input string*/
 		Scanner in=new Scanner(System.in);
 		System.out.println("Enter the String: ");
 		char ch[]=in.next().toCharArray();

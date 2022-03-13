@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-
+/*print string the character like z format matrxi*/
 public class Alphabet_Matrix {
 
 	public static void main(String[] args) {

@@ -1,10 +1,6 @@
-/AAAAA.class
-/Alphabet_Matrix.class
-/ArrayMatrixPrint.class
-/ArrayOddEven.class
-/ArrayProblem.class
 /ArraySortBasedFrequency.class
 /ArrayUnionIntersectionExcept.class
+/Bankingproject/
 /ChildAndParent.class
 /CrossString.class
 /DistionaryWordStringCheck.class
@@ -27,6 +23,8 @@
 /Parentheses.class
 /Pattern.class
 /Practice.class
+/Practice1.class
+/RailwayReservation/
 /RemoveCharactersS2ToS1.class
 /Repeated_letter.class
 /ReverseOnlyAlphabets.class
@@ -41,10 +39,10 @@
 /SubString_String.class
 /Sum_of_elements_in_a_matrix.class
 /TaxiBooking/
+/TicTacToe/
 /WavePatternPrintArray.class
 /XPattern.class
 /ZeroAtLast.class
 /ZohoInterviewProblems/
 /student.class
-/RailwayReservation/
-/Bankingproject/
+/RotateMatrix90Degree.class

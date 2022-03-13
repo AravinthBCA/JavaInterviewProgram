@@ -8,7 +8,7 @@ public class SentenceCheckWithStringisnotPalindrome {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Enter the string: ");
 		String str = in.nextLine();
-		String out = "",f="";
+		String notPalindromeString = "",palindromeString="";
 		String arr[] = str.split(" ");
 		int check=0;
 		for (int i = 0; i < arr.length; i++) {
@@ -17,15 +17,17 @@ public class SentenceCheckWithStringisnotPalindrome {
 			for (int j = 0; j < ch.length; j++) {
 					if(ch[j]!=ch[ch.length-1-j]) {
 						check=1;
-						out+=String.valueOf(ch);
+						notPalindromeString+=String.valueOf(ch);
+						System.out.println("Not Palindrome : "+notPalindromeString);
 						break;
 					}
 				}
 			if(check==0) {
-				f+=String.valueOf(ch);
+				palindromeString+=String.valueOf(ch);
+				System.out.println("Palindrome : "+palindromeString);
 			}
 		}
-		System.out.println("Output not palindrome: "+out);
+		System.out.println("Output not palindrome: "+notPalindromeString);
 	}
 
 }
