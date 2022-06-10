@@ -22,9 +22,13 @@ public class AddTheOddFrequencyElement {
 				}
 			}
 		}
-		int flag = 0,temp = 0;
-		for (int i = 0; i < arr.length; i+=flag) {
+		int flag = 0,temp = 0,temp1=0;
+		for (int i = 0; i < arr.length; i++) {
 			flag = 0;
+			if(temp1==arr[i]) {
+				continue;
+			}
+			temp1=arr[i];
 			for (int j = 0; j < arr.length; j++) {
 				if(arr[i] == arr[j]) {
 					flag++;
@@ -48,6 +52,6 @@ Test Case 2:
 Enter the array size n : 6
 Input :  10 20 30 40 40 10
 Output : 50
-Explanation : The elements are 20 30
+Explanation : The elements are 20 30 are occuring odd frequency then we need add those elements
 
 */

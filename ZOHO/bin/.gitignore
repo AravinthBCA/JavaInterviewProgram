@@ -1,8 +1,3 @@
-/AAAAA.class
-/Alphabet_Matrix.class
-/ArrayMatrixPrint.class
-/ArrayOddEven.class
-/ArrayProblem.class
 /ArraySortBasedFrequency.class
 /ArrayUnionIntersectionExcept.class
 /Bankingproject/
@@ -23,12 +18,15 @@
 /MatrixTraverse.class
 /MaxMinArray.class
 /MergeArray.class
+/MergeArrayWithourExtraSpaces.class
 /MileStone.class
 /NumberToWords.class
+/ParentheseCheckUsingStack.class
 /Parentheses.class
 /Pattern.class
 /Practice.class
 /Practice1.class
+/Practise/
 /RailwayReservation/
 /RemoveCharactersS2ToS1.class
 /Repeated_letter.class
@@ -55,8 +53,3 @@
 /ZeroAtLast.class
 /ZohoInterviewProblems/
 /student.class
-/Practise/
-/MergeArrayWithourExtraSpaces.class
-/GFG.class
-/MergeArrayWithoutExtraSpaces.class
-/ParentheseCheckUsingStack.class
