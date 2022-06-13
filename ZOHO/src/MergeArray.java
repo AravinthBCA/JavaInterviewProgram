@@ -24,7 +24,7 @@ public class MergeArray {
 //		}
 		System.out.println(Arrays.toString(arr1));
 		System.out.println(Arrays.toString(arr2));
-		System.out.println("After merge and duplicate remove: ");
+		System.out.println("After Merge and duplicate remove: ");
 
 		for (int i = 0; i < merge.length; i++) {
 			System.out.println(merge[i]);
