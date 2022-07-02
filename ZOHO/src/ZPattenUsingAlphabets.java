@@ -1,19 +1,25 @@
 import java.util.*;
 import java.io.*;
-
-public class ArrayMatrixPrint {
+/*print string the character like z format matrxi
+ * Enter the String: aravintaravin
+	a r a v i 
+      	  n   
+    	t     
+  	  a       
+	r a v i n 
+ */
+public class ZPattenUsingAlphabets {
 
 	public static void main(String[] args) {
-		/* sample input = aravinthii 
-		 * This program print Z format matrix using character extract from input string*/
+		// TODO Auto-generated method stub
 		Scanner in=new Scanner(System.in);
 		System.out.println("Enter the String: ");
-		char ch[]=in.next().toCharArray();
+		char[] ch=in.next().toCharArray();
 		int n=ch.length;
-		if(n%3==1){
+		if(ch.length%3==1){
 			for(int i=0;i<=n/3;i++,System.out.println()){
 				for(int j=0;j<=n/3;j++){
-					if(i==0||i==n/3||i+j==n/3){
+					if((i==0)||(i==n/3)||(i+j==n/3)){
 						System.out.print(ch[i+i+j]+" ");
 					}
 					else{
@@ -23,7 +29,9 @@ public class ArrayMatrixPrint {
 			}
 		}
 		else{
-			System.out.println("None");
+			System.out.print("None");
 		}
+		System.out.println();
 	}
+
 }

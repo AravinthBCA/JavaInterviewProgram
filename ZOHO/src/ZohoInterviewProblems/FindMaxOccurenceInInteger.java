@@ -31,8 +31,12 @@ public class FindMaxOccurenceInInteger {
 	                count++;
 	            }
 	        }
-	        if(count>=prevCount && arr[i]>value){
+	        if(count>prevCount){
 	            prevCount=count;
+	            value=arr[i];
+	        }
+	        if(count>=prevCount && arr[i]>value) {
+	        	prevCount=count;
 	            value=arr[i];
 	        }
 	    }

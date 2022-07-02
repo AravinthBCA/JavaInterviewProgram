@@ -1,10 +1,3 @@
-/Bankingproject/
-/FlightBooking/
-/Practise/
-/RailwayReservation/
-/TaxiBooking/
-/TicTacToe/
-/ZohoInterviewProblems/
 /AAAAA.class
 /Alphabet_Matrix.class
 /ArrayMatrixPrint.class
@@ -12,6 +5,7 @@
 /ArrayProblem.class
 /ArraySortBasedFrequency.class
 /ArrayUnionIntersectionExcept.class
+/Bankingproject/
 /ChildAndParent.class
 /CrossString.class
 /DistionaryWordStringCheck.class
@@ -20,6 +14,7 @@
 /FindExtraElementInArray.class
 /FindLargestPrimeNumberGivenRange.class
 /FindStringInArray.class
+/FlightBooking/
 /LatinSquareNumber.class
 /LookAndSayPattern.class
 /LoopProgram.class
@@ -36,6 +31,8 @@
 /Pattern.class
 /Practice.class
 /Practice1.class
+/Practise/
+/RailwayReservation/
 /RemoveCharactersS2ToS1.class
 /Repeated_letter.class
 /ReverseOnlyAlphabets.class
@@ -54,7 +51,11 @@
 /StringVowelArrange.class
 /SubString_String.class
 /Sum_of_elements_in_a_matrix.class
+/TaxiBooking/
+/TicTacToe/
 /WavePatternPrintArray.class
 /XPattern.class
 /ZeroAtLast.class
+/ZohoInterviewProblems/
 /student.class
+/ZPattenUsingAlphabets.class

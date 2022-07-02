@@ -1,11 +1,9 @@
 import java.util.Arrays;
 
 public class MergeArrayWithourExtraSpaces {
-	static int arr1[] = new int[] { 1, 5, 9, 10, 15, 20 };
-	static int arr2[] = new int[] { 2, 3, 8, 13 };
-
+	
 	// Function to merge two arrays
-	static void merge(int m, int n)
+	static void merge(int arr1[],int m,int arr2[], int n)
 	{
 		int i = 0, j = 0, k = m - 1;
 		while (i <= k && j < n) {
@@ -25,7 +23,9 @@ public class MergeArrayWithourExtraSpaces {
 
 	public static void main(String[] args)
 	{
-		merge(arr1.length, arr2.length);
+		int arr1[] = new int[] { 0, 3, 9, 20, 15, 1 };
+		int arr2[] = new int[] { 1, 2, 8, 13 };
+		merge(arr1,arr1.length,arr2,arr2.length);
 		System.out.print("After Merging \nFirst Array: ");
 		System.out.println(Arrays.toString(arr1));
 		System.out.print("Second Array: ");

@@ -17,9 +17,7 @@ public class FirstAddSecondElementMaddy {
 			arr[i]=in.nextInt();
 		}
 		for (int i = 0; i < arr.length; i++) {
-			first=0;
-			second=0;
-			temp=0;
+			first=0;second=0;temp=0;
 			if(i==0) {
 				first=arr[i];
 				second=arr[i+1];

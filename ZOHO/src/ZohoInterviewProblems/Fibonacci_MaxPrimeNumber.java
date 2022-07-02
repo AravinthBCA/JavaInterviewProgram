@@ -10,6 +10,7 @@ public class Fibonacci_MaxPrimeNumber {
 	    Scanner in = new Scanner(System.in);
 	    System.out.println("Enter your input number : ");
 	    int input = in.nextInt();
+	    System.out.println(Math.sqrt(input));
 	    int temp=0,first=0,second=1,count=1,max=0;
 	    System.out.println(first+"\n"+second);
 	    for(int i=0; temp<=input; i++){

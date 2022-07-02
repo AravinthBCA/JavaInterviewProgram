@@ -1,10 +1,9 @@
 package ZohoInterviewProblems;
 
-import java.util.*;
-import java.io.*;
+import java.util.Arrays;
 
-public class Practice {
-	
+public class SpiralWayInsertionMatrix {
+
 	static int MAX = 1000;
 	 
     // Function to convert the array to Spiral
@@ -131,5 +130,5 @@ public class Practice {
  
         convertMatrixToSortedSpiral(y, m, n);
     }
-	
+
 }
